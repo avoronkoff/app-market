@@ -1,17 +1,8 @@
 {
   "name": "app-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "angular": "^1.5.5",
-    "angular-ui-bootstrap": "^2.5.0",
-    "angular-ui-router": "^1.0.3",
-    "bootstrap": "^3.3.7",
-    "gulp": "^3.9.1",
-    "gulp-uglify": "^3.0.0",
-    "jquery": "^3.2.1"
-  },
+  "description": "market application",
+  "main": "",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -24,9 +15,6 @@
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "Aleksei V",
   "license": "ISC"
 }
