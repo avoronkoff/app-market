@@ -1,6 +1,6 @@
 <div>
     <h2>Корзина</h2>
-    <table class="table table-condensed" ng-if="mainCtrl.basket_phones.length > 0">
+    <table class="table table-condensed" ng-if="PhoneCtrl.basket_phones.length > 0">
         <thead>
             <tr>
                 <th class="hidden-sm hidden-xs">фото</th>
@@ -11,16 +11,16 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="phone in mainCtrl.basket_phones track by $index">
+            <tr ng-repeat="phone in PhoneCtrl.basket_phones track by $index">
                 <td class="hidden-sm hidden-xs"><img ng-src="{{phone.img}}" height="120"></td>
                 <td>{{phone.phone}}</td>
                 <td class="text-center hidden-sm hidden-xs">1 шт.</td>
                 <td class="text-center">{{phone.price | currFilter}}</td>
                 <td class="text-right">
-                    <button type="button" class="btn btn-warning" ng-click="mainCtrl.remove(phone)">удалить</button>
+                    <button type="button" class="btn btn-warning" ng-click="PhoneCtrl.remove(phone)">удалить</button>
                 </td>
             </tr>
         </tbody>
     </table>
-    <h3 class="text-center text-muted" ng-if="mainCtrl.basket_phones.length === 0">Корзина пуста</h3>
+    <h3 class="text-center text-muted" ng-if="PhoneCtrl.basket_phones.length === 0">Корзина пуста</h3>
 </div>

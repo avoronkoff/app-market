@@ -21,10 +21,12 @@ gulp.task('scripts', function() {
         './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
         './node_modules/jquery/dist/jquery.min.js',
         './node_modules/bootstrap/dist/js/bootstrap.min.js',
-        './src/scripts/app.js',
-        './src/scripts/controllers/mainCtrl.js',
-        './src/scripts/controllers/modalCtrl.js',
-        './src/scripts/factories/productsFactory.js'
+        './src/app.module.js',
+        './src/app.route.js',
+        './src/app.filter.js',
+        './src/phones/phones.controller.js',
+        './src/modal/modal.controller.js',
+        './src/factories/products.factory.js'
     ])
         .pipe(concat('vendor.min.js'))
         .pipe(gulp.dest('build/scripts'));
