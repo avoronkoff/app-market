@@ -1,0 +1,16 @@
+<div>
+    <div class="row">
+        <div class="col-sm-4" ng-repeat="phone in mainCtrl.phones track by phone.id">
+            <div class="card box-shadow">
+                <div class="card-block text-center">
+                    <img ng-src="{{phone.img}}" height="120">
+                    <h3 class="card-title" ng-bind="phone.phone"></h3>
+                    <p class="card-text">{{phone.price | currFilter}}</p>
+                    <button type="button" class="btn btn-primary btn-sm add_to_basket" ng-click="mainCtrl.open_modal(phone)">
+                        в корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
